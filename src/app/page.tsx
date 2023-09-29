@@ -1,4 +1,11 @@
 import type { Metadata } from 'next'
+import CallToAction from '@/components/CallToAction'
+import CodingBy from '@/components/CodingBy'
+import ControAction from '@/components/ControAction'
+import GridPhoto from '@/components/GridPhoto'
+import HeaderTextLine from '@/components/HeaderTextLine'
+import LogoHeadLine from '@/components/LogoHeadLine'
+import Problem from '@/components/Problem'
 
 export const metadata: Metadata = {
   title: 'Frontendmentor | Loopstudios Landing Page',
@@ -6,11 +13,24 @@ export const metadata: Metadata = {
 }
 
 const PageHome = () => (
-  <main className="flex min-h-screen flex-col items-center justify-center gap-10 text-7xl">
-    <p className="text-primary">Hello World!!</p>
-    <p className="text-5xl">Test Font Primary</p>
-    <p className="font-secondary text-5xl ">Test Font Secondary</p>
-  </main>
+  <section className="md:max-w-8xl">
+    <header className="relative flex justify-center md:justify-start">
+      <LogoHeadLine />
+      <ControAction />
+      <HeaderTextLine />
+    </header>
+
+    <main>
+      <Problem />
+      <GridPhoto />
+    </main>
+
+    <footer>
+      <CallToAction />
+      <CodingBy />
+    </footer>
+
+  </section>
 )
 
 export default PageHome
