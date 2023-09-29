@@ -6,7 +6,7 @@ const CodingBy = () => (
     .
     Coded by
     {' '}
-    <a href="https://github.com/Atsuno" target="_blank" rel="noreferrer">Atsuno</a>
+    <a href="https://github.com/Atsuno/frontendmentor-loopstudios-landing-page" target="_blank" rel="noreferrer">Atsuno</a>
     .
   </div>
 )
